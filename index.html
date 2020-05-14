@@ -14,8 +14,7 @@
             border-radius: 5px;
             height: 40px;
             width: 130px;
-            font-size: 14px;
-            
+            font-size: 14px;   
         }
         #sign-in{
             border-radius: 0; 
@@ -28,52 +27,42 @@
         }
         body{
             font-family: Arial,sans-serif;
-            
-        }
-        header{
-            
-        }
-        .alignleft {
-	        float: left;
-            margin-top ;
-        }
-        .alignright {
-	        float: right;
         }
         #search-buttons{
             border:none;
         }
         #search-buttons:hover{
-            border-style: dotted;
+            border:1px solid rgb(196, 193, 193);
         }
         #footer{
             background-color: rgb(233, 233, 233);
-            position:absolute;
+            position:fixed;
             padding-top: 1rem;
             bottom: 0;
             width:100%;
             height:35px;
         }
-        p{
+        p, a{
             font-size: 13px;
             text-decoration:none;
             display:inline;
+            color: black;
         }
-        p:hover{
+        a:hover{
             text-decoration: underline;
         }   
     </style>
 </head>
 
 <body> 
-    <div style="margin-top: 20px; margin-right: 20px; margin-left: 20px;"> 
-        <p>About</p> <p style="padding-left: 10px;">Store</p> <span style="float:right;"><p style="padding-right: 10px;">Gmail</p> <p style="padding-right: 10px;">Images</p> <button id="sign-in"><strong>Sign In</strong></button></span></p>
+    <div id="header" style="margin-top: 20px; margin-right: 20px; margin-left: 20px;"> 
+        <p>About</p> <p style="padding-left: 10px;">Store</p> <span style="float:right;"><a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&navigationDirection=forward"><p style="padding-right: 10px;">Gmail</p></a><a href="https://images.google.com/"><p style="padding-right: 10px;">Images</p></a> <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&navigationDirection=forward"><button id="sign-in"><strong>Sign In</strong></button></span></p></a>
     </div>
     <div style="margin: 170px 0px 30px 0px; text-align: center;"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt = "Google logo"></div>
     <div style = "text-align: center;">
         <form>
             <label id="search">
-                <input type="text" style="border-radius: 10px; height: 30px; width: 500px;"></input>
+                <input type="text" style=" border-radius:20px; height: 30px; width: 500px;"></input>
                 <div style="margin-top: 10px;">
                     <button id="search-buttons">Google Search</button>
                     <button id="search-buttons" style = "margin-left: 5px;">I'm Feeling Lucky</button>
@@ -82,7 +71,7 @@
         </form>
     </div>
     <div style = "padding-left: 2rem;" id="footer"> 
-        <p>Advertising</p><p>Business</p><p>How Search Works</p> <span style="float: right;"><p>Privacy</p></span>
+        <p>Advertising</p><p style="padding-left: 10px;">Business</p><p style="padding-left: 10px;">How Search Works</p><span style="float: right;"><p style="padding-right: 10px;"><a href="https://policies.google.com/privacy?hl=en-US">Privacy</a></p><p style="padding-right: 10px;">Terms</p><p style="padding-right: 50px;">Settings</p></span>
     </div>
 </body>
 

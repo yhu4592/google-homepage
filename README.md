@@ -1,0 +1,1 @@
+Just an TheOdinProject project I'm doing to help practice some HTML and CSS. Don't mind me.
