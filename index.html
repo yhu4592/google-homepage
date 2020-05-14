@@ -1,78 +1,49 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    
-    <style>
-        body{
-            padding:0;
-            margin: 0;
-        }
-        button{
-            background-color: #e9e9e9e8;
-            font-family: Arial,sans-serif;
-            border-radius: 5px;
-            height: 40px;
-            width: 130px;
-            font-size: 14px;   
-        }
-        #sign-in{
-            border-radius: 0; 
-            color: white; 
-            background-color: rgb(85, 125, 235);
-            height: 30px;
-            width: 70px;
-            border:none;
-            border-radius: 2px;
-        }
-        body{
-            font-family: Arial,sans-serif;
-        }
-        #search-buttons{
-            border:none;
-        }
-        #search-buttons:hover{
-            border:1px solid rgb(196, 193, 193);
-        }
-        #footer{
-            background-color: rgb(233, 233, 233);
-            position:fixed;
-            padding-top: 1rem;
-            bottom: 0;
-            width:100%;
-            height:35px;
-        }
-        p, a{
-            font-size: 13px;
-            text-decoration:none;
-            display:inline;
-            color: black;
-        }
-        a:hover{
-            text-decoration: underline;
-        }   
-    </style>
-</head>
-
-<body> 
-    <div id="header" style="margin-top: 20px; margin-right: 20px; margin-left: 20px;"> 
-        <p>About</p> <p style="padding-left: 10px;">Store</p> <span style="float:right;"><a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&navigationDirection=forward"><p style="padding-right: 10px;">Gmail</p></a><a href="https://images.google.com/"><p style="padding-right: 10px;">Images</p></a> <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&navigationDirection=forward"><button id="sign-in"><strong>Sign In</strong></button></span></p></a>
-    </div>
-    <div style="margin: 170px 0px 30px 0px; text-align: center;"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt = "Google logo"></div>
-    <div style = "text-align: center;">
-        <form>
-            <label id="search">
-                <input type="text" style=" border-radius:20px; height: 30px; width: 500px;"></input>
-                <div style="margin-top: 10px;">
-                    <button id="search-buttons">Google Search</button>
-                    <button id="search-buttons" style = "margin-left: 5px;">I'm Feeling Lucky</button>
-                </div>
-            </label>
-        </form>
-    </div>
-    <div style = "padding-left: 2rem;" id="footer"> 
-        <p>Advertising</p><p style="padding-left: 10px;">Business</p><p style="padding-left: 10px;">How Search Works</p><span style="float: right;"><p style="padding-right: 10px;"><a href="https://policies.google.com/privacy?hl=en-US">Privacy</a></p><p style="padding-right: 10px;">Terms</p><p style="padding-right: 50px;">Settings</p></span>
-    </div>
-</body>
-
+    <head>
+        <link rel = "stylesheet" href = "reset.css">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <div id="header">
+            <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+            <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">
+                Store
+            </a>
+            <span>
+                <a href="https://www.google.com/gmail/about/"><button id = "sign_in">Sign In</button></a>
+            </span>
+            <span>
+                <a href="https://www.google.com/gmail/about/">Gmail</a>
+                <a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
+            </span>
+            
+        </div>
+        <div id="logo">
+            <img src="images/googlelogo_color_272x92dp.png">
+        </div>
+        
+        <div id="search_bar">
+            <form>
+                <label id="search_bar">
+                    <input id = "search_box" type="text"></input>
+                </label>
+            </form>
+        </div>
+        <div id="search_buttons">
+            <button id="two_buttons">Google Search</button>
+            <button id="two_buttons">I'm Feeling Lucky</button>
+        </div>
+        </div>
+        <div id="footer">
+            <a>Advertising</a>
+            <a>Business</a>
+            <a>How Business Works</a>
+            <span>
+                <a>Privacy</a>
+                <a>Terms</a>
+                <a>Settings</a>
+            </span>
+        </div>
+    </body>
 </html>

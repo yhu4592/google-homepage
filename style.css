@@ -1,0 +1,80 @@
+body{
+    font-family: Arial, sans-serif;
+    color:rgb(77, 77, 77);
+    font-size: 13px;
+}
+#header{
+    height: 3rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+
+    
+}
+#footer{
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    height:2rem;
+    background-color: rgb(233, 233, 233);
+    width:100%;
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+a{
+    display: inline;
+    text-decoration: none;
+    color:rgb(83, 83, 83);
+    padding-right: 1rem;
+}
+a:hover{
+    text-decoration: underline;
+}
+#logo{
+    text-align: center;
+    padding-top: 125px;
+}
+#space{
+    padding: 1rem 1rem 1rem 1rem;
+}
+#search_bar{
+    text-align: center;
+}
+#search_box{
+    margin-top: 30px;
+    border-radius: 100px;
+    height: 40px;
+    width: 550px;
+}
+#search_buttons{
+    text-align: center;
+}
+#two_buttons{
+    color: rgb(99, 98, 98);
+    font-size: 13px;
+    margin: 1.5rem 0.5rem 1rem 0.5rem;
+    border:none;
+    background-color: rgb(240, 240, 240);
+    height: 2.5rem;
+    padding: 0 1rem 0 1rem;
+    border-radius: 3px;
+}
+#two_buttons:hover{
+    box-shadow: 1px 1px 1px rgb(192, 192, 192);
+    border: 1px solid rgb(184, 183, 183);
+}
+span{
+    float:right;
+}
+#sign_in{
+    position: relative;
+    top:-0.5rem;
+    border-radius: 2px;
+    height:2rem;
+    width:4rem;
+    border:none;
+    color:white;
+    font-weight: 700;
+    background-color: rgb(71, 131, 241);
+}
+#sign_in:hover{
+    box-shadow: 100px;
+}
